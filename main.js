@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 const library = "Greeks";
 const planet = "Jupiter";
@@ -99,3 +100,24 @@ else {
     console.log('Progress: Keep it up');
 }
 ;
+let score = [];
+if (quiz.questionOne === library) {
+    score.push(1);
+}
+else if (quiz.questionTwo === planet) {
+    score.push(1);
+}
+else if (quiz.questionThree === river) {
+    score.push(1);
+}
+else if (quiz.questionFour === painting) {
+    score.push(1);
+}
+else if (quiz.questionFive === browser) {
+    score.push(1);
+}
+else {
+    score.push(0);
+}
+let sum = score.reduce((acc, current) => acc + current, 0);
+console.log(`Your score is ${sum} out of 5`);
