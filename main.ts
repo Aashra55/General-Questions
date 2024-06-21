@@ -29,7 +29,7 @@ const quiz = await inquirer.prompt(
             choices:['Earth','Saturn','Jupiter','Uranus']
         },
         {
-            message:`Selext the correct answer:
+            message:`Select the correct answer:
             Which river is the longest in South America?`,
             name:'questionThree',
             type:'list',
